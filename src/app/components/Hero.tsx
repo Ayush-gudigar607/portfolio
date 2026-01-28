@@ -30,11 +30,11 @@ export default function Hero() {
 
         {/* Buttons */}
         <div className="grid grid-cols-2 gap-3 sm:gap-6 justify-center md:justify-start w-full sm:w-auto md:ml-7 pt-3">
-  <button className="bg-[#2f3b4f] text-white w-35 px-3 py-2 md:px-8 md:py-4 md:text-base  text-[15px] rounded-full  md:rounded-xl shadow-md hover:bg-[#1e2533] transition">
+  <button className="bg-[#2f3b4f] text-white  w-35 md:w-45  px-3 py-2 md:px-8 md:py-4 md:text-base  text-[15px] rounded-full  md:rounded-xl shadow-md hover:bg-[#1e2533] transition">
     Download CV
   </button>
 
-  <button className="border-2 border-[#2f3b4f] w-35 text-[#2f3b4f] text-[15px]  px-3 py-2 md:px-8 md:py-4 md:text-base rounded-full md:rounded-xl bg-white hover:bg-[#f5f5f5] transition">
+  <button className="border-2 border-[#2f3b4f]  w-35 md:w-45  text-[#2f3b4f] text-[15px]  px-3 py-2 md:px-8 md:py-4 md:text-base rounded-full md:rounded-xl bg-white hover:bg-[#f5f5f5] transition">
     Contact Me
   </button>
 </div>
