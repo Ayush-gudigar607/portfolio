@@ -112,9 +112,11 @@ export default function Hero() {
             Download CV
           </button>
 
-          <button className="border-2 border-[#2f3b4f] w-35 md:w-45 text-[#2f3b4f] text-[15px] px-3 py-2 md:px-8 md:py-4 md:text-base rounded-full md:rounded-xl bg-white hover:bg-[#f5f5f5] transition">
-            Contact Me
-          </button>
+            <a href="#contact">
+            <button className="border-2 border-[#2f3b4f] w-35 md:w-45 text-[#2f3b4f] text-[15px] px-3 py-2 md:px-8 md:py-4 md:text-base rounded-full md:rounded-xl bg-white hover:bg-[#f5f5f5] transition">
+              contact me
+            </button>
+            </a>
         </motion.div>
       </motion.div>
 

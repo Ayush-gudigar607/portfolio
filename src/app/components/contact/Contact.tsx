@@ -41,7 +41,7 @@ const Contact = () => {
       >
         <div className="relative w-[280px] h-[360px] md:w-[800px] md:h-[800px] group">
           <Image
-            src="/projects.avif"
+            src="/computer.avif"
             alt="Profile"
             fill
             sizes="(max-width: 640px) 18rem, (max-width: 1024px) 20rem, 32rem"
@@ -55,14 +55,14 @@ const Contact = () => {
         
         <motion.h1
           variants={itemVariants}
-          className="abouttext text-[48px] md:text-[120px]  text-base md:text-nowrap lg:text-[170px] font-semibold text-black leading-none"
+            className="abouttext  text-[48px] md:text-[120px]  text-base md:text-nowrap lg:text-[170px] font-semibold text-black leading-none "
         >
           Get In Touch
         </motion.h1>
 
         <motion.div
           variants={itemVariants}
-          className="lines mt-3 flex flex-col"
+          className="lines mt-3 flex flex-col md:mt-8 md:mb-10"
         >
           <span className="h-[3px] w-[80px] md:w-[120px] rounded-full bg-[#2f3b4f]" />
           <span className="h-[4px] w-[140px] md:w-[200px] rounded-full bg-[#2f3b4f] mt-2 ml-4 md:ml-6" />
@@ -70,14 +70,14 @@ const Contact = () => {
 
         <motion.p
           variants={itemVariants}
-          className="mt-20 text-gray-500 max-w-md text-base md:text-nowrap md:text-4xl"
+          className=" mt-5  text-gray-500 max-w-md text-base md:text-nowrap md:text-4xl"
         >
          Feel free to contact me for any inquiries or collaborations.
         </motion.p>
 
         <motion.span
           variants={itemVariants}
-          className="learnmore mt-15 w-fit  rounded-full text-gray-500 text-3xl "
+          className="learnmore mt-2 md:mt-5  w-fit  rounded-full text-gray-400 text-3xl md:mt-10 "
         >
           ayushgudigar979@gmail.com
         </motion.span>

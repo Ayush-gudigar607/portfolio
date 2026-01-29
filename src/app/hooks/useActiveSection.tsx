@@ -3,6 +3,7 @@ import { useEffect } from "react";
 
 export function useActiveSection() {
   useEffect(() => {
+    
     const sections = document.querySelectorAll("section[id]");
 
     const observer = new IntersectionObserver(

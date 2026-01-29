@@ -61,7 +61,7 @@ const Project = () => {
 
         <motion.div
           variants={itemVariants}
-          className="lines mt-3 flex flex-col"
+          className="lines  mt-3 md:mt-9 flex flex-col"
         >
           <span className="h-[3px] w-[80px] md:w-[120px] rounded-full bg-[#2f3b4f]" />
           <span className="h-[4px] w-[140px] md:w-[200px] rounded-full bg-[#2f3b4f] mt-2 ml-4 md:ml-6" />
@@ -69,7 +69,7 @@ const Project = () => {
 
         <motion.p
           variants={itemVariants}
-          className="mt-5 text-gray-500 max-w-md text-base md:text-nowrap md:text-4xl"
+          className="mt-5  md:mt-10 text-gray-500 max-w-md text-base md:text-nowrap md:text-4xl"
         >
          Featured projects I’ve built and am building.
         </motion.p>

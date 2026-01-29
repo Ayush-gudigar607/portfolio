@@ -1,4 +1,4 @@
-import { Contact, Sidebar } from 'lucide-react'
+import { Sidebar } from 'lucide-react'
 import React from 'react'
 import Navbar from '../components/Home/navbar'
 import Hero from '../components/Home/Hero'

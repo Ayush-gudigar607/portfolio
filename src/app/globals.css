@@ -13,6 +13,10 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
@@ -54,6 +58,10 @@ body {
     box-shadow: #0a0a0a;
            /* smaller button text */
   }
+  .social-btn {
+    width: 60px;
+    height: 60px;
+  }
 }
 
 /* ===== Keyframes for position adjustment ===== */
@@ -68,9 +76,181 @@ body {
   }
 }
 
+  .social-btn {
+  @apply w-20 h-20 rounded-full bg-[#1f2937] text-white flex items-center justify-center 
+  transition-all duration-300 hover:scale-110 hover:bg-black;
+}
+
 .social-btn {
   @apply w-20 h-20 rounded-full bg-[#1f2937] text-white flex items-center justify-center 
   transition-all duration-300 hover:scale-110 hover:bg-black;
 }
 
+@media (max-width: 768px) {
+  .social-btn {
+    width: 50px !important;
+    height: 50px !important;
+  }
+}
+
+/* Education Section Animations */
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-fade-in-down {
+  animation: fadeInDown 0.8s ease-out forwards;
+}
+
+.animate-slide-in-left {
+  animation: slideInLeft 1s ease-out 0.4s forwards;
+  opacity: 0;
+}
+
+.animate-slide-in-right {
+  animation: slideInRight 1s ease-out 0.6s forwards;
+  opacity: 0;
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Title appears after the two lines */
+.animate-title {
+  opacity: 0;
+  animation: fadeUp 0.6s ease-out forwards;
+  animation-delay: 0.9s;
+}
+
+/* Image animation */
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* First image appears AFTER title */
+.animate-img-1 {
+  opacity: 0;
+  animation: fadeSlideUp 0.8s ease-out forwards;
+  animation-delay: 1.4s;
+}
+
+/* Second image */
+.animate-img-2 {
+  opacity: 0;
+  animation: fadeSlideUp 0.8s ease-out forwards;
+  animation-delay: 1.9s;
+}
+
+/* Third image */
+.animate-img-3 {
+  opacity: 0;
+  animation: fadeSlideUp 0.8s ease-out forwards;
+  animation-delay: 2.4s;
+}
+
+@keyframes slideFadeRight {
+  from {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Name */
+.animate-text-1 {
+  opacity: 0;
+  animation: slideFadeRight 0.8s ease-out forwards;
+  animation-delay: 2.9s;
+}
+
+/* Paragraph lines */
+.animate-text-2 {
+  opacity: 0;
+  animation: slideFadeRight 0.8s ease-out forwards;
+  animation-delay: 3.2s;
+}
+
+.skill-card {
+  position: relative;
+  background: #f5f5f5;
+  border-radius: 18px;
+  border: 2px solid transparent;
+  padding: 4.5rem;
+  transition: 
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    border 0.35s ease,
+    background 0.35s ease;
+  cursor: pointer;
+}
+
+.skill-card:hover {
+  transform: scale(1.08);
+  border: 2px solid #000;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.15);
+  background: #fff;
+  z-index: 50;
+}
+
+/* Active / Selected */
+.skill-card.active {
+  border: 2px solid #000;
+  background: #ffffff;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.18);
+  transform: scale(1.08);
+  z-index: 20;
+}
+
+.skill-icon {
+  width: 42px;
+  height: 42px;
+  margin-bottom: 20px;
+}
 
