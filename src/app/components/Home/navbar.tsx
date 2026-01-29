@@ -5,9 +5,9 @@ export default function Navbar(): React.ReactElement {
   return (
     <nav
       className="
-        sticky top-0 z-50
+        fixed  top-0 z-50
         flex justify-between items-center 
-        px-4 sm:px-8 md:px-14 py-6 md:py-8 w-full
+        px-4 sm:px-8 md:px-14 py-6  md:py-8 w-full
           bg-[#ededed]  backdrop-blur-md shadow-sm
       "
     >

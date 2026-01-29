@@ -22,3 +22,55 @@ body {
   margin: 0;
 }
 
+/* ===== MOBILE ONLY ===== */
+@media (max-width: 768px) {
+  .imagediv {
+    padding-top: 50px;     /* add top padding for spacing */
+    padding-bottom: 50px;  /* add bottom padding for spacing */
+  }
+
+  .about {
+    margin-left: 29px;          /* override ml-12 */
+    padding: 0;              /* override p-20 */
+    margin-top: -48px;     /* pull text closer to image */
+    animation: aboutShift 0.4s ease-out forwards;
+  }
+
+  .abouttext {
+    font-size: 34px;         /* mobile heading size */
+    line-height: 1.1;
+    width: fit-content;
+    background-color: white !important;
+  }
+  
+  .lines{
+    margin-top: 20px;       /* increase space above lines */
+  }
+
+  .learnmore {
+    padding: 10px;      /* smaller button padding */
+    font-size: 16px;  
+    width: fit-content;
+    box-shadow: #0a0a0a;
+           /* smaller button text */
+  }
+}
+
+/* ===== Keyframes for position adjustment ===== */
+@keyframes aboutShift {
+  from {
+    transform: translateY(24px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.social-btn {
+  @apply w-20 h-20 rounded-full bg-[#1f2937] text-white flex items-center justify-center 
+  transition-all duration-300 hover:scale-110 hover:bg-black;
+}
+
+
