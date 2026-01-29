@@ -2,8 +2,6 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import "../../../../src/app/globals.css";
-import About from "../About/About";
 import Social from "../../utils/Social";
 
 const containerVariants = {
@@ -20,7 +18,7 @@ const itemVariants = {
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.6, ease: "easeOut" },
+    transition: { duration: 0.6, ease: [0.0, 0.0, 0.58, 1.0] as const },
   },
 };
 

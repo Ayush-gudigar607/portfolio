@@ -16,11 +16,11 @@ const stair = {
   initial: { y: "100%" },
   animate: {
     y: "0%",
-    transition: { duration: 0.6, ease: "easeInOut" }
+    transition: { duration: 0.6, ease: [0.42, 0, 0.58, 1] as const }
   },
   exit: {
     y: "-100%",
-    transition: { duration: 0.6, ease: "easeInOut" }
+    transition: { duration: 0.6, ease: [0.42, 0, 0.58, 1] as const }
   }
 };
 

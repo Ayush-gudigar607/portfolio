@@ -18,7 +18,7 @@ const itemVariants = {
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.6, ease: "easeOut" },
+    transition: { duration: 0.6, ease: [0.0, 0.0, 0.58, 1.0] as const },
   },
 };
 
@@ -34,7 +34,7 @@ const imageVariants = {
     scale: 1,
     transition: {
       x: {
-        type: "spring",
+        type: "spring" as const,
         stiffness: 120,   
         damping: 18,      
         mass: 0.9,        

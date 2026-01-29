@@ -1,10 +1,12 @@
 "use client";
-// Quote.js
-import "./style.css";
 import { motion } from "framer-motion";
 import { useIntersectionObserver } from "./useIntersectionObserver";
 
-function Wrapper({ children }) {
+interface WrapperProps {
+	children: React.ReactNode;
+}
+
+function Wrapper({ children }: WrapperProps) {
 	return (
 		<div className="min-h-[80vh] mx-auto container  p-10 grid grid-cols-1 mt-10 ">
 			<motion.div

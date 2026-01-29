@@ -6,7 +6,7 @@ interface MenuUIProps {
 
 export default function MenuUI({ onClose }: MenuUIProps) {
     const menuItems = [
-      { name: "HOME", href: "/Home" },
+      { name: "HOME", href: "/" },
       { name: "ABOUT", href: "/about" },
       { name: "PROJECTS", href: "/project" },
       { name: "CONTACT", href: "/contact" }
