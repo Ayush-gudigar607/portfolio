@@ -1,7 +1,8 @@
+"use client";
 import { Sidebar } from 'lucide-react'
 import React from 'react'
 import Navbar from '../components/Home/navbar'
-import About from '../components/About/About'
+import Aboutpage from '../components/About/Aboutpage'
 import Intro from '../components/About/Intro'
 import Skills from '../components/About/Skills'
 import Edu from '../components/Edu'
@@ -17,7 +18,7 @@ const page = () => {
         
           <main className="flex-1 flex flex-col">
             <Navbar />
-            <About/>
+            <Aboutpage/>
             <Intro/>
             <Skills/>
             <Edu/>

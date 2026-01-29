@@ -27,14 +27,14 @@ export default function Navbar(): React.ReactElement {
       </h2>
 
      <button onClick={toggleMenu} className="w-10 h-10 z-[60] relative flex flex-col items-center justify-center" aria-label="Toggle Menu">
-  <div className={`w-9 h-[4px] bg-neutral-900 rounded transition-all duration-300 absolute ${
-    isMenuOpen ? 'rotate-45' : 'translate-y-[-8px]'
+  <div className={`w-9 h-[4px] rounded transition-all duration-300 absolute ${
+    isMenuOpen ? 'rotate-45 bg-white' : 'translate-y-[-8px] bg-neutral-900'
   }`}></div>
-  <div className={`w-9 h-[4px] bg-neutral-900 rounded transition-all duration-300 ${
-    isMenuOpen ? 'opacity-0' : 'opacity-100'
+  <div className={`w-9 h-[4px] rounded transition-all duration-300 ${
+    isMenuOpen ? 'opacity-0 bg-white' : 'opacity-100 bg-neutral-900'
   }`}></div>
-  <div className={`w-9 h-[4px] bg-neutral-900 rounded transition-all duration-300 absolute ${
-    isMenuOpen ? '-rotate-45' : 'translate-y-[8px]'
+  <div className={`w-9 h-[4px] rounded transition-all duration-300 absolute ${
+    isMenuOpen ? '-rotate-45 bg-white' : 'translate-y-[8px] bg-neutral-900'
   }`}></div>
 </button>
     </nav>

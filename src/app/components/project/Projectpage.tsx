@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import "../../../../src/app/globals.css";
+import About from "../About/About";
 
 const containerVariants = {
   hidden: {},
@@ -23,10 +24,10 @@ const itemVariants = {
   },
 };
 
-const About = () => {
+const Projectpage = () => {
   return (
     <motion.section
-      id="about"
+      id="projects"
       variants={containerVariants}
       initial="hidden"
       whileInView="visible"
@@ -40,7 +41,7 @@ const About = () => {
       >
         <div className="relative w-[280px] h-[360px] md:w-[800px] md:h-[800px] group">
           <Image
-            src="/profile.png"
+            src="/projects.avif"
             alt="Profile"
             fill
             sizes="(max-width: 640px) 18rem, (max-width: 1024px) 20rem, 32rem"
@@ -56,12 +57,12 @@ const About = () => {
           variants={itemVariants}
           className="abouttext text-[48px] md:text-[120px] lg:text-[170px] font-semibold text-black leading-none"
         >
-          About Me
+          My Projects 
         </motion.h1>
 
         <motion.div
           variants={itemVariants}
-          className="lines mt-3  md:mt-8 flex flex-col"
+          className="lines  mt-3 md:mt-9 flex flex-col"
         >
           <span className="h-[3px] w-[80px] md:w-[120px] rounded-full bg-[#2f3b4f]" />
           <span className="h-[4px] w-[140px] md:w-[200px] rounded-full bg-[#2f3b4f] mt-2 ml-4 md:ml-6" />
@@ -69,17 +70,18 @@ const About = () => {
 
         <motion.p
           variants={itemVariants}
-          className="mt-5  md:mt-8 text-gray-500 max-w-md text-base md:text-nowrap md:text-4xl"
+          className="mt-5  md:mt-10 text-gray-500 max-w-md text-base md:text-nowrap md:text-4xl"
         >
-          A brief introduction about me and my interest.
+         Featured projects I’ve built and am building.
         </motion.p>
 
-        <Link href="/about">
+        <Link href="/project">
           <motion.button
             variants={itemVariants}
-            className="learnmore mt-8 w-fit px-6 py-5 rounded-full bg-[#2f3b4f] text-2xl text-white hover:bg-[#3f4b5f] transition-colors"
+            className="learnmore mt-8 w-fit px-6 py-3 rounded-full bg-[#2f3b4f] text-white hover:bg-[#3f4b5f] transition-colors flex items-center gap-2"
           >
-            Learn More
+            <span className="text-2xl">↓</span>
+            <span className="text-2xl">Scroll Down</span>
           </motion.button>
         </Link>
       </div>
@@ -87,4 +89,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Projectpage;

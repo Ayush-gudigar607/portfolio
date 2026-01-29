@@ -1,4 +1,4 @@
-'use client';
+"use client";
 // Quote.js
 import "./style.css";
 import { motion } from "framer-motion";

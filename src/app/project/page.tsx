@@ -1,5 +1,5 @@
 import React from 'react'
-import Project from '../components/project/Project'
+import Projectpage from '../components/project/Projectpage'
 import Navbar from '../components/Home/navbar'
 import Sidebar from '../components/Home/Sidebar'
 import Plist from './Plist'
@@ -12,7 +12,7 @@ const page = () => {
          
           <main className="flex-1 flex flex-col">
             <Navbar />
-            <Project/>
+            <Projectpage/>
             <Plist/>
             <Quote/>
             <GetInTouch/>

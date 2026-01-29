@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import "../../../../src/app/globals.css";
 import About from "../About/About";
@@ -74,12 +75,14 @@ const Project = () => {
          Featured projects I’ve built and am building.
         </motion.p>
 
-        <motion.button
-          variants={itemVariants}
-          className="learnmore mt-8 w-fit px-6 py-5 rounded-full bg-[#2f3b4f] text-2xl text-white"
-        >
-          Learn More
-        </motion.button>
+        <Link href="/project">
+          <motion.button
+            variants={itemVariants}
+            className="learnmore mt-8 w-fit px-6 py-5 rounded-full bg-[#2f3b4f] text-2xl text-white hover:bg-[#3f4b5f] transition-colors"
+          >
+            Learn More
+          </motion.button>
+        </Link>
       </div>
     </motion.section>
   );

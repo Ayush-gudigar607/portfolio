@@ -130,7 +130,7 @@ export default function Hero() {
       >
         <div className="group relative overflow-hidden border-4 border-[#ededed] shadow-lg w-36 h-36 sm:w-48 sm:h-48 rounded-none rounded-t-full rounded-b-full md:rounded-none md:rounded-t-[50%] md:rounded-b-[50%] md:w-[500px] md:h-[500px] lg:w-[1000px] lg:h-[800px] bg-white">
           <Image
-            src="/Ayush.png"
+            src="/profiles.png"
             alt="Profile"
             fill
             sizes="(max-width: 640px) 10rem, (max-width: 1024px) 20rem, 32rem"

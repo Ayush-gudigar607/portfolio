@@ -1,7 +1,7 @@
 'use client';
 
 import React from "react"
-
+import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { Award } from 'lucide-react';
 
@@ -64,7 +64,13 @@ export function Education({
         {/* Main Content Grid */}
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 items-start justify-between">
           {/* Left Side - Education Info & Images */}
-          <div className="space-y-8 w-full lg:w-[45%] animate-slide-in-left">
+          <motion.div 
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1, ease: "easeOut" }}
+            className="space-y-8 w-full lg:w-[45%]"
+          >
             {/* Timeline */}
             <div>
               <p className="text-sm font-semibold text-muted-foreground uppercase tracking-wide mb-2">
@@ -101,10 +107,16 @@ export function Education({
                 </div>
               ))}
             </div>
-          </div>
+          </motion.div>
 
           {/* Right Side - Achievements */}
-          <div className="w-full lg:w-[55%] animate-slide-in-right">
+          <motion.div 
+            initial={{ opacity: 0, x: 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
+            className="w-full lg:w-[55%]"
+          >
             <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-2">
               Achievements
             </h3>
@@ -152,7 +164,7 @@ export function Education({
                 </div>
               ))}
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

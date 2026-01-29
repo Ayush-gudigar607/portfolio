@@ -2,6 +2,9 @@ import { Sidebar } from 'lucide-react'
 import React from 'react'
 import Navbar from '../components/Home/navbar'
 import Hero from '../components/Home/Hero'
+import About from '../components/About/About'
+import Project from '../components/project/Project'
+import Contact from '../components/contact/Contact'
 
 const Page = () => {
   return (
@@ -10,7 +13,9 @@ const Page = () => {
           <main className="flex-1 flex flex-col">
             <Navbar />
             <Hero />
-            
+            <About />
+            <Project />
+            <Contact />
           </main>
         </div>
   )

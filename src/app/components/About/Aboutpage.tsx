@@ -23,7 +23,7 @@ const itemVariants = {
   },
 };
 
-const About = () => {
+const Aboutpage = () => {
   return (
     <motion.section
       id="about"
@@ -77,9 +77,10 @@ const About = () => {
         <Link href="/about">
           <motion.button
             variants={itemVariants}
-            className="learnmore mt-8 w-fit px-6 py-5 rounded-full bg-[#2f3b4f] text-2xl text-white hover:bg-[#3f4b5f] transition-colors"
+            className="learnmore mt-8 w-fit px-6 py-3 rounded-full bg-[#2f3b4f] text-white hover:bg-[#3f4b5f] transition-colors flex items-center gap-2"
           >
-            Learn More
+            <span className="text-2xl">↓</span>
+            <span className="text-2xl">Scroll Down</span>
           </motion.button>
         </Link>
       </div>
@@ -87,4 +88,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Aboutpage;
