@@ -39,7 +39,7 @@ const Aboutpage = () => {
       >
         <div className="relative w-[280px] h-[360px] md:w-[800px] md:h-[800px] group">
           <Image
-            src="/profile.png"
+            src="/me.png"
             alt="Profile"
             fill
             sizes="(max-width: 640px) 18rem, (max-width: 1024px) 20rem, 32rem"
