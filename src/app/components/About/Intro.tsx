@@ -64,15 +64,15 @@ const Intro = () => {
           className="w-full md:w-[40%] grid grid-cols-2 gap-3 md:gap-4 auto-rows-fr"
         >
           <motion.div variants={fadeUp} transition={{ delay: 0.2 }} className="relative w-full h-[180px] md:h-[300px] grayscale hover:grayscale-0 transition-all duration-300">
-            <Image src="/profile.png" alt="Profile 1" fill className="object-cover rounded-lg" />
+            <Image src="/me.png" alt="Profile 1" fill className="object-cover rounded-lg" />
           </motion.div>
 
           <motion.div variants={fadeUp} transition={{ delay: 0.4 }} className="relative w-full h-[180px] md:h-[300px] row-span-1 grayscale hover:grayscale-0 transition-all duration-300 mt-8 md:mt-12">
-            <Image src="/profile.png" alt="Profile 2" fill className="object-cover rounded-lg" />
+            <Image src="/me.png" alt="Profile 2" fill className="object-cover rounded-lg" />
           </motion.div>
 
           <motion.div variants={fadeUp} transition={{ delay: 0.6 }} className="relative w-full h-[150px] md:h-[250px] col-span-2 grayscale hover:grayscale-0 transition-all duration-300 -mt-6 md:-mt-8">
-            <Image src="/profile.png" alt="Profile 3" fill className="object-cover rounded-lg" />
+            <Image src="/me.png" alt="Profile 3" fill className="object-cover rounded-lg" />
           </motion.div>
         </motion.div>
 
