@@ -14,7 +14,7 @@ export default function Page() {
 
   return (
     <div className=" flex flex-col md:flex-row min-h-screen bg-[#f5f5f5] text-black overflow-x-hidden">
-          <Sidebar />
+          {/* <Sidebar /> */}
           <div className="flex-1 flex flex-col">
             <Navbar />
             <Hero  />

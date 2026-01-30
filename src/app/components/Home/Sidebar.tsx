@@ -39,7 +39,7 @@ export default function Sidebar() {
 
   return (
     <nav className="hidden md:flex fixed left-0 top-1/2 -translate-y-1/2 
-                    w-[80px] h-[550px] bg-[#2f3b4f] 
+                    w-[70px] h-[500px] bg-[#2f3b4f] 
                     rounded-r-[40px] flex-col items-center justify-center 
                     shadow-2xl z-50">
       <div className="flex flex-col space-y-10">

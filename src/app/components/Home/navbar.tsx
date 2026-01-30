@@ -18,7 +18,7 @@ export default function Navbar(): React.ReactElement {
       className="
         fixed  top-0 z-50
         flex justify-between items-center 
-        px-4 sm:px-8 md:px-14 py-6  md:py-8 w-full
+        px-4 sm:px-8 md:px-10 py-6  md:py-8 w-full 
           bg-[#ededed]  bg-transparent  backdrop-blur-md shadow-sm
       "
     >
