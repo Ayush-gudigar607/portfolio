@@ -144,9 +144,9 @@ export default function Projects() {
           transition={{ duration: 0.5 }}
           className="mb-12"
         >
-          <h2 className="text-3xl md:text-5xl lg:text-8xl lg:text-nowrap font-bold text-black mb-8">
-            Other Note Worthy Projects
-          </h2>
+            <h2 className="text-3xl md:text-5xl lg:text-7xl font-bold text-black mb-8 text-left">
+              Other Note Worthy Projects
+            </h2>
           
           {/* Decorative Lines */}
           <div className="lines mt-3 md:mt-6 flex flex-col mb-8">

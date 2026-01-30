@@ -117,7 +117,6 @@ export default function Hero() {
 
       {/* IMAGE */}
       <motion.div
-        variants={imageVariants}
         className="order-1 md:order-2 flex justify-center items-center w-ful"
       >
         <div
